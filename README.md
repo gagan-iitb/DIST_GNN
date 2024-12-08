@@ -6,7 +6,7 @@
 The code used in the tutorial is available on [Github](https://github.com/Anirban600/EAT-DistGNN)
 
 ## Setup
-Please watch this video on environment setup. Need to add link.
+Please watch this [video](https://drive.google.com/file/d/1Fd8MbXWvKfukSE-p5EZ9dOzxRPLa-VnA/view?usp=drive_link) on environment setup. 
 Doing this setup beforehand is recommended so you can follow along in the hands-on during the tutorial.
 The code has all the required files for setup.
 
