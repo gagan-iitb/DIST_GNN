@@ -1,6 +1,6 @@
 # DIST_GNN - Tutorial on Distributed Graph Neural Networks
 <img src="https://github.com/user-attachments/assets/c8a0e3bf-626f-4e61-908a-b9fd16b7900f" alt="distgnn" width="500"/>
-<img src="https://github.com/user-attachments/assets/f985dc3a-1ef3-4211-9d75-b80fcd0075c7" alt="distgnn1" width="500"/>
+<!-- img src="https://github.com/user-attachments/assets/f985dc3a-1ef3-4211-9d75-b80fcd0075c7" alt="distgnn1" width="500"/-->
 
 ## Code Repo
 The code used in the tutorial is available on [Github](https://github.com/Anirban600/EAT-DistGNN)
