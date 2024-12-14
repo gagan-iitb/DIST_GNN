@@ -26,7 +26,7 @@ python3.9 partition_code/partition_default.py \
                       --balance_edges \
                       --output partitions/flickr/metis
 ```
-Here is a visualization of how different classes are distributed among different partitions for the flickr dataset
+Here is a visualization of how different classes are distributed among different partitions for the flickr dataset:
 
 ![image](https://github.com/user-attachments/assets/ebefb871-7526-4d0f-8b9b-339eafbab7be)
 
@@ -37,6 +37,6 @@ Run this command if you are following the hands-on
 ./deploy_trainers.sh -G flickr -P metis -n 7 -p 1.0 -d 0.5 -s 15 -v default -e 10 -c 1
 ```
 
-Here a some results after the training finishes
+Here a some results after the training finishes:
 
 ![image](https://github.com/user-attachments/assets/d506e0be-1f42-4c48-8276-2b55fb101dab)
