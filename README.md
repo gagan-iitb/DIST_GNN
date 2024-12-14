@@ -26,7 +26,10 @@ python3.9 partition_code/partition_default.py \
                       --balance_edges \
                       --output partitions/flickr/metis
 ```
-Add some visualization for partitioning
+Here is a visualization of how different classes are distributed among different partitions for the flickr dataset
+
+![image](https://github.com/user-attachments/assets/ebefb871-7526-4d0f-8b9b-339eafbab7be)
+
 
 ## Training
 Run this command if you are following the hands-on
