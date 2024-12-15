@@ -17,6 +17,7 @@ Doing this setup beforehand is recommended so you can follow along in the hands-
 The code has all the required files for setup.
 
 ## Partitioning
+Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
 Run this command if you are following the hands-on
 ``` [bash]
 python3.9 partition_code/partition_default.py \
@@ -32,6 +33,7 @@ Here is a visualization of how different classes are distributed among different
 
 
 ## Training
+Here is a quick [video](https://drive.google.com/file/d/1EBU9Lnn6CkRWdiTiMeK6NwbjOrSPyINn/view?usp=sharing) on distributed training using our code.
 Run this command if you are following the hands-on
 ``` [bash]
 ./deploy_trainers.sh -G flickr -P metis -n 7 -p 1.0 -d 0.5 -s 15 -v default -e 10 -c 1
