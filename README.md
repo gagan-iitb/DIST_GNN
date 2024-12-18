@@ -21,7 +21,7 @@ Doing this setup beforehand is recommended so you can follow along in the hands-
 The code has all the required files for setup.
 ## Follow these commands and run these commands on command line one by one 
 ```
-git clone https://github.com/gagan-iitb/DIST_GNN.git
+git clone https://github.com/Anirban600/EAT-DistGNN.git
 ```
 Update path of the folder in docker-compose yml file(Remeber path should be absolute path of EAT-DistGNN)
 ```
