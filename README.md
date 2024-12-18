@@ -51,6 +51,11 @@ sudo docker exec -it container1 bash
 ssh 192.168.1.3
 exit
 ```
+```
+cd ..
+ls
+cd EAT-DistGNN
+```
 Now container1 can ssh all the four container and run the training command  
 ## Partitioning
 Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
