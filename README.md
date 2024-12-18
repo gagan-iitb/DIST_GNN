@@ -52,7 +52,7 @@ ssh 192.168.1.3
 exit
 ```
 ```
-cd ..
+cd 
 ls
 cd EAT-DistGNN
 ```
