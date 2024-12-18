@@ -45,18 +45,19 @@ chmod +x ssh_key_setup.sh
 ./ssh_key_setup.sh
 exit
 ```
-Now go to container 1 and SSH into all the other containers. Please change the SSH ip one by one till 192.168.1.5
+Now go to container 1 and SSH into all the other containers. Please change the SSH IPs one by one till 192.168.1.5
 ```
 sudo docker exec -it container1 bash
 ssh 192.168.1.3
 exit
 ```
-```
-cd 
-ls
-cd EAT-DistGNN
-```
 Now container1 can ssh all the four containers and run the training command  
+
+Change to the EAT_DistGNN folder before running the below commands.
+```
+cd ~/EAT-DistGNN
+```
+
 ## Partitioning
 Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
 Run this command if you are following the hands-on
@@ -68,7 +69,7 @@ python3.9 partition_code/partition_default.py \
                       --balance_edges \
                       --output partitions/flickr/metis
 ```
-Here is a visualization of how different classes are distributed among different partitions for the flickr dataset:
+Here is a visualization of how different classes are distributed among different partitions for the Flickr dataset:
 
 ![image](https://github.com/user-attachments/assets/ebefb871-7526-4d0f-8b9b-339eafbab7be)
 
@@ -80,6 +81,6 @@ Run this command if you are following the hands-on
 ./deploy_trainers.sh -G flickr -P metis -n 7 -p 1.0 -d 0.5 -s 15 -v default -e 10 -c 1
 ```
 
-Here a some results after the training finishes:
+Here are some results after the training finishes:
 
 ![image](https://github.com/user-attachments/assets/d506e0be-1f42-4c48-8276-2b55fb101dab)
