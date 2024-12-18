@@ -12,18 +12,18 @@ https://github.com/user-attachments/assets/cbdff8e3-42e2-4958-bcec-b97ac6289934
 The code used in the tutorial is available on [Github](https://github.com/Anirban600/EAT-DistGNN)
 
 ## Setup
-The setup assumes you have docker installed on your system. If docker is not installed then install docker using the following links: 
+The setup assumes you have docker installed on your system. If docker is not installed, then install docker using the following links: 
 
 [Linux](https://docs.docker.com/engine/install/) | [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) | [Mac](https://docs.docker.com/desktop/setup/install/mac-install/).
 
 **Please watch this [video](https://drive.google.com/file/d/1Fd8MbXWvKfukSE-p5EZ9dOzxRPLa-VnA/view?usp=drive_link) on environment setup. 
-Doing this setup beforehand is recommended so you can follow along in the hands-on during the tutorial.**
+You should do this setup beforehand so you can follow along in the hands-on during the tutorial.**
 The code has all the required files for setup.
-## Follow these commands and run these commands on command line one by one 
+## Follow these commands and run these commands on the command line one by one 
 ```
 git clone https://github.com/Anirban600/EAT-DistGNN.git
 ```
-Update path of the folder in docker-compose yml file(Remeber path should be absolute path of EAT-DistGNN)
+Update the path of the folder in the docker-compose.yml file(Remember the path should be the absolute path of EAT-DistGNN)
 ```
 cd EAT-DistGNN
 sudo docker-compose build
@@ -31,13 +31,13 @@ sudo docker-compose up -d
 sudo docker ps
 sudo docker exec -it container1 bash
 ```
-Run this command to add public key on container1 
-paste this generated part on ssh_key_setup.sh file
+Run this command to add the public key on container1 
 ```
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
 cat /root/.ssh/id_rsa.pub
 ```
-Now follow on these commands for ssh all the container. please change the container number(1,2,3,4)
+Paste this generated public key in ssh_key_setup.sh file
+Now follow these commands for ssh all the containers. Please change the container number(1,2,3,4)
 ```
 sudo docker exec -it container1 bash
 cd ~/EAT-DistGNN
@@ -45,7 +45,7 @@ chmod +x ssh_key_setup.sh
 ./ssh_key_setup.sh
 exit
 ```
-Now go to the container1 and ssh all the other container . please change the ssh ip one by one till 192.168.1.5
+Now go to container 1 and SSH into all the other containers. Please change the SSH ip one by one till 192.168.1.5
 ```
 sudo docker exec -it container1 bash
 ssh 192.168.1.3
@@ -56,7 +56,7 @@ cd
 ls
 cd EAT-DistGNN
 ```
-Now container1 can ssh all the four container and run the training command  
+Now container1 can ssh all the four containers and run the training command  
 ## Partitioning
 Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
 Run this command if you are following the hands-on
