@@ -19,6 +19,11 @@ The setup assumes you have docker installed on your system. If docker is not ins
 **Please watch this [video](https://drive.google.com/file/d/1Fd8MbXWvKfukSE-p5EZ9dOzxRPLa-VnA/view?usp=drive_link) on environment setup. 
 Doing this setup beforehand is recommended so you can follow along in the hands-on during the tutorial.**
 The code has all the required files for setup.
+## Follow these commands and run these commands on command line one by one 
+```
+git clone https://github.com/gagan-iitb/DIST_GNN.git
+cd EAT-DistGNN
+```
 
 ## Partitioning
 Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
