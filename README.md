@@ -23,8 +23,32 @@ The code has all the required files for setup.
 ```
 git clone https://github.com/gagan-iitb/DIST_GNN.git
 cd EAT-DistGNN
+sudo docker-compose build
+sudo docker-compose up -d
+sudo docker ps
+sudo docker exec -it container1 bash
 ```
-
+Run this command to add public key on container1 
+paste this generated part on ssh_key_setup.sh file
+```
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+cat /root/.ssh/id_rsa.pub
+```
+Now follow on these commands for ssh all the container. please change the container number(1,2,3,4)
+```
+sudo docker exec -it container1 bash
+cd ~/EAT-DistGNN
+chmod +x ssh_key_setup.sh
+./ssh_key_setup.sh
+exit
+```
+Now go to the container1 and ssh all the other container . please change the ssh ip one by one till 192.168.1.5
+```
+sudo docker exec -it container1 bash
+ssh 192.168.1.3
+exit
+```
+Now container1 can ssh all the four container and run the training command  
 ## Partitioning
 Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
 Run this command if you are following the hands-on
