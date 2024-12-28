@@ -16,7 +16,7 @@ The setup assumes you have docker installed on your system. If docker is not ins
 
 [Linux](https://docs.docker.com/engine/install/) | [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) | [Mac](https://docs.docker.com/desktop/setup/install/mac-install/).
 
-**Please watch this [video](https://drive.google.com/file/d/1Fd8MbXWvKfukSE-p5EZ9dOzxRPLa-VnA/view?usp=drive_link) on environment setup. 
+**Please watch this [video](https://youtu.be/AX00pkqrWTQ) on environment setup. 
 You should do this setup beforehand so you can follow along in the hands-on during the tutorial.**
 The code has all the required files for setup.
 ## Follow these commands and run these commands on the command line one by one 
@@ -59,7 +59,7 @@ cd ~/EAT-DistGNN
 ```
 
 ## Partitioning
-Here is a quick [video](https://drive.google.com/file/d/1h5YLllBwgyFLWIfj7rM10rNWFsexO8uU/view?usp=sharing) on partitioning using our code.
+Here is a quick [video](https://youtu.be/a_aHk9-KKSo) on partitioning using our code.
 Run this command if you are following the hands-on
 ``` [bash]
 python3.9 partition_code/partition_default.py \
@@ -75,7 +75,7 @@ Here is a visualization of how different classes are distributed among different
 
 
 ## Training
-Here is a quick [video](https://drive.google.com/file/d/1EBU9Lnn6CkRWdiTiMeK6NwbjOrSPyINn/view?usp=sharing) on distributed training using our code.
+Here is a quick [video](https://youtu.be/gs9aWTmwnbc) on distributed training using our code.
 Run this command if you are following the hands-on
 ``` [bash]
 ./deploy_trainers.sh -G flickr -P metis -n 7 -p 1.0 -d 0.5 -s 15 -v default -e 10 -c 1
